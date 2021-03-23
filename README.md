@@ -65,11 +65,7 @@ tox command
 tox
 ```
 rebuilding the envs
-<<<<<<< HEAD
 ```bash
-=======
-```bash
->>>>>>> 3d8f21d93544949567ee99bd59474ac25dab3dd4
 tox -r
 ```
 
