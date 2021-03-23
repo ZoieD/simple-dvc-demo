@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 conda create env
+=======
+conda create env -
+>>>>>>> 3d8f21d93544949567ee99bd59474ac25dab3dd4
 ```bash
 conda create -n wineq python=3.7
 ```
@@ -61,7 +65,11 @@ tox command
 tox
 ```
 rebuilding the envs
+<<<<<<< HEAD
 ```bash
+=======
+```bash
+>>>>>>> 3d8f21d93544949567ee99bd59474ac25dab3dd4
 tox -r
 ```
 
@@ -80,3 +88,16 @@ build your own package commands
 ```bash
 python setup.py sdist bdist_wheel
 ```
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 3d8f21d93544949567ee99bd59474ac25dab3dd4
