@@ -1,5 +1,7 @@
-conda create env
-`conda create -n wineq python=3.7`
+conda create env -
+```bash
+conda create -n wineq python=3.7
+```
 `conda activate wineq`
 
 create a req file and install 
@@ -36,15 +38,20 @@ git push to remote repo
 `dvc metrics show`
 `dvc metrics diff`
 
-
+tox command
 `tox`
-reload the envs
+rebuilding the envs
 `tox -r`
 
-setup.py
+pytest command
+`pytest -v`
+
+setup command (setup.py)
 `pip install -e .`
 check current packages
 `pip freeze`
+build your own package commands
+`python setup.py sdist bdist_wheel`
 
 
 
