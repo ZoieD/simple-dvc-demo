@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-conda create env
-=======
 conda create env -
 >>>>>>> 3d8f21d93544949567ee99bd59474ac25dab3dd4
 ```bash
