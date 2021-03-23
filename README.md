@@ -1,4 +1,4 @@
-create env
+conda create env
 `conda create -n wineq python=3.7`
 `conda activate wineq`
 
@@ -29,6 +29,23 @@ git push to remote repo
 `git remote add origin https://github.com/dorisdouzi/simple-dvc-demo.git`
 `git branch -M main`
 `git push -u origin main`
+
+
+`dvc repro`
+`dvc params diff`
+`dvc metrics show`
+`dvc metrics diff`
+
+
+`tox`
+reload the envs
+`tox -r`
+
+setup.py
+`pip install -e .`
+check current packages
+`pip freeze`
+
 
 
 
