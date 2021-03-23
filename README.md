@@ -1,57 +1,82 @@
 conda create env
-`conda create -n wineq python=3.7`
-`conda activate wineq`
+```bash
+conda create -n wineq python=3.7
+```
+```bash
+conda activate wineq
+```
 
 create a req file and install 
-`pip install -r requirements.txt`
+```bash
+pip install -r requirements.txt
+```
 
 download the data from 
 https://drive.google.com/drive/folders/18zqQiCJVgF7uzXgfbIJ-04zgz1ItNfF5
 
 git init
-`git init`
+```bash
+git init
+```
 
 dvc init
-`dvc init`
+```bash
+dvc init
+```
 
 dvc add datasets
-`dvc add data_given/winequality.csv`
+```bash
+dvc add data_given/winequality.cs
+```
 
 git add changes and first commit
-`git add .`
-`git commit -m "first commit"`
+```bash 
+git add .
+git commit -m "first commit"
+```
 
 update readme and git commit
-`git add .`
-`git commit -m "update README.md"`
+```bash
+git add .
+git commit -m "update README.md"
+```
 
 git push to remote repo
-`git remote add origin https://github.com/dorisdouzi/simple-dvc-demo.git`
-`git branch -M main`
-`git push -u origin main`
+```bash
+git remote add origin https://github.com/dorisdouzi/simple-dvc-demo.git
+git branch -M main
+git push -u origin main
+```
 
+dvc commands
+```bash
+dvc repro
+dvc params diff
+dvc metrics show
+dvc metrics diff
+```
 
-`dvc repro`
-`dvc params diff`
-`dvc metrics show`
-`dvc metrics diff`
+tox command
+```bash
+tox
+```
+rebuilding the envs
+```bash
+tox -r
+```
 
+pytest command
+```bash
+pytest -v
+```
 
-`tox`
-reload the envs
-`tox -r`
-
-setup.py
-`pip install -e .`
+setup command (setup.py)
+```bash
+pip install -e .
 check current packages
-`pip freeze`
-
-
-
-
-
-
-
-
-
-
+pip freez
+````
+build your own package commands
+```bash
+python setup.py sdist bdist_wheel
+```
