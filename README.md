@@ -84,16 +84,3 @@ build your own package commands
 ```bash
 python setup.py sdist bdist_wheel
 ```
-<<<<<<< HEAD
-=======
-
-
-
-
-
-
-
-
-
-
->>>>>>> 3d8f21d93544949567ee99bd59474ac25dab3dd4
