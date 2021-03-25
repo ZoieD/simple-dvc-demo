@@ -7,8 +7,8 @@ stages:
       md5: ccc8d3507eb151f53f760d36abdef888
       size: 91998
     - path: src/get_data.py
-      md5: b4dfcdd8169310be736b981542024ed7
-      size: 717
+      md5: ab86cc78f54e382f8e8cf8f35ebca072
+      size: 737
     - path: src/load_data.py
       md5: 47fb845ed9703fa8dd5f40b2267134c0
       size: 739
@@ -46,15 +46,15 @@ stages:
       size: 2717
     params:
       params.yaml:
-        estimators.ElasticNet.params.alpha: 0.9
-        estimators.ElasticNet.params.l1_ratio: 0.4
+        estimators.ElasticNet.params.alpha: 0.88
+        estimators.ElasticNet.params.l1_ratio: 0.89
     outs:
     - path: report/params.json
-      md5: b8bb7114baa0200cf4c35ccb56fe785a
-      size: 43
+      md5: 1fbd9309a5e306fe8f84687de7ee32f7
+      size: 45
     - path: report/scores.json
-      md5: 86524820870673b16aeaa90890571e40
-      size: 101
+      md5: ac89e037063ee307b6d23c8ef0583610
+      size: 100
     - path: saved_models/model.joblib
-      md5: 6c3d7d387863aa6a3bfd598c20996851
+      md5: c0d7299a4decc878c2f742f2196b3b7a
       size: 818

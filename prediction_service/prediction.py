@@ -14,7 +14,7 @@ class NotInRange(Exception):
         super().__init__(self.message)
 
 class NotInCols(Exception):
-    def __init__(self, message="Not in cols"):
+    def __init__(self, message="Not in columns"):
         self.message = message
         super().__init__(self.message)
 
@@ -42,9 +42,9 @@ def predict(data):
 def get_schema(schema_path=schema_path):
     with open(schema_path) as json_file:
         schema = json.load(json_file)
-    return schema
+    return schema 
 
-def validate_input(dict_request):
+def validate_input(dict_request): 
     def _validate_cols(col):
         schema = get_schema()
         actual_cols = schema.keys()
@@ -79,7 +79,7 @@ def api_response(dict_request):
             response = {"response": response}
             return response
             
-    except NotInRange as e:
+    except NotInRange as e: 
         response = {"the_exected_range": get_schema(), "response": str(e) }
         return response
 
