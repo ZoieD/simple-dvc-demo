@@ -6,7 +6,6 @@ import numpy as np
 from prediction_service import prediction
 
 
-params_path = "params.yaml"
 webapp_root = "webapp"
 
 static_dir = os.path.join(webapp_root, "static")
@@ -31,8 +30,8 @@ def index():
         except Exception as e:
             print(e)
             # error = {"error": "Something went wrong!! Try again"}
-            # error = {"error":e}
-            return render_template("404.html", error = e)
+            error = {"error":e}
+            return render_template("404.html", error = error)
     else:
         return render_template("index.html") 
 
